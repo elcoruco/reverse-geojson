@@ -1,0 +1,28 @@
+{
+  "name": "reverse-geojson",
+  "version": "1.0.0",
+  "description": "Reverse geojson generated with mapshaper to use it with d3",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elcoruco/reverse-geojson.git"
+  },
+  "keywords": [
+    "d3",
+    "reverse",
+    "geojson",
+    "mapshaper"
+  ],
+  "author": "el.coruco@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elcoruco/reverse-geojson/issues"
+  },
+  "homepage": "https://github.com/elcoruco/reverse-geojson#readme"
+}
