@@ -1,7 +1,7 @@
 /*
 /  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 /
-/  Define el plugin
+/  Define the plugin
 /
 /  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 */
