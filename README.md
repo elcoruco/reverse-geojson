@@ -5,7 +5,7 @@ Using d3 to plot a geojson from an INEGI or INE map can be complicated. If a too
 
 To use it, you have to import the library, and pass it a geojson to correct the order in which its coordinates are arranged(clockwise)
 
-```
+```js
 // import the method
 const reverseGeojson = require("reverse-geojson");
 
