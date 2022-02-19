@@ -40,7 +40,6 @@ root.appendChild(svg.node())
 
 ![error](https://user-images.githubusercontent.com/3756555/154812477-af99f2c4-9a1e-4624-9005-828e15355bb4.png)
 
-
 Instead, if we first change the order of the coordinates, the map will be displayed correctly:
 
 ```
