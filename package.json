@@ -1,6 +1,6 @@
 {
   "name": "reverse-geojson",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reverse geojson generated with mapshaper to use it with d3",
   "main": "index.js",
   "directories": {
@@ -17,7 +17,10 @@
     "d3",
     "reverse",
     "geojson",
-    "mapshaper"
+    "mapshaper",
+    "visualization",
+    "INEGI",
+    "INE"
   ],
   "author": "el.coruco@gmail.com",
   "license": "MIT",
