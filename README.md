@@ -16,7 +16,7 @@ const clockwiseCoordinates   = reverseGeojson(someGeojson);
 
 For example, if we use mapshaper to generate a geojson of the Mexican Republic using the official INEGI shp file, and from there we use d3 to display it, this is what we would get:
 
-```
+```js
 import {create} from "d3-selection";
 import { geoPath, geoMercator } from "d3-geo";
 const m = require("./mexico.json");
@@ -42,7 +42,7 @@ root.appendChild(svg.node())
 
 Instead, if we first change the order of the coordinates, the map will be displayed correctly:
 
-```
+```js
 import {create} from "d3-selection";
 import { geoPath, geoMercator } from "d3-geo";
 const reverseGeojson = require("reverse-geojson");
