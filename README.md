@@ -38,6 +38,8 @@ svg.selectAll("path")
 root.appendChild(svg.node())
 ```
 
+![error](https://user-images.githubusercontent.com/3756555/154812477-af99f2c4-9a1e-4624-9005-828e15355bb4.png)
+
 
 Instead, if we first change the order of the coordinates, the map will be displayed correctly:
 
@@ -65,3 +67,6 @@ svg.selectAll("path")
 
 root.appendChild(svg.node())
 ```
+![right](https://user-images.githubusercontent.com/3756555/154812482-c0d5405f-79f6-4e46-afe1-c6fa0fa0366e.png)
+
+
