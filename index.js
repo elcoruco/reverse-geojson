@@ -17,9 +17,39 @@ const r = geo => {
 }
 
 const reverseGeojson = geoCollection => {
-  for(let geo of geoCollection.features){
-    geo = r(geo);
+  if(geoCollection.features){
+    try{
+      for(let geo of geoCollection.features){
+        geo = r(geo);
+      }
+    }
+    catch(e){
+      throw(e);
+    }
   }
+  else if(Array.isArray(geoCollection)){
+    try{
+      for(let geo of geoCollection){
+        geo = r(geo);
+      }
+    }
+    catch(e){
+      throw(e);
+    }
+  }
+
+  else if(geoCollection.geometry){
+   try{
+    r(geoCollection)
+   }
+   catch(e){
+     throw(e)
+   }
+  }
+  else{
+    throw "I cannot understand WTF with your file"
+  }
+  
   return geoCollection;
 }
 
