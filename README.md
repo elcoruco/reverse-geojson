@@ -19,19 +19,19 @@ For example, if we use mapshaper to generate a geojson of the Mexican Republic u
 ```js
 import {create} from "d3-selection";
 import { geoPath, geoMercator } from "d3-geo";
-const m = require("./mexico.json");
+const someGeojson = require("./mexico.json");
 
-const width = 800;
+const width  = 800;
 const height = 800;
 
 let root  = document.getElementById("mexico");
-let svg   = create("svg").attr("viewBox", [0,0,width,height]);
+let svg   = create("svg").attr("viewBox", [0, 0, width, height]);
 
-let projection = geoMercator().fitExtent([[0,0], [width,height]], m);
+let projection = geoMercator().fitExtent([[0, 0], [width, height]], someGeojson);
 let path       = geoPath(projection);
 
 svg.selectAll("path")
-    .data(m.features)
+    .data(someGeojson.features)
     .enter().append("path")
     .attr("d",path);
 
@@ -47,21 +47,21 @@ Instead, if we first change the order of the coordinates, the map will be displa
 import {create} from "d3-selection";
 import { geoPath, geoMercator } from "d3-geo";
 const reverseGeojson = require("reverse-geojson");
-const m = require("./mexico.json");
+const someGeojson = require("./mexico.json");
 
-const width = 800;
+const width  = 800;
 const height = 800;
 // reverse the coordinates first
-const geo = reverseGeojson(m);
+const correctGeojson = reverseGeojson(someGeojson);
 
 let root  = document.getElementById("mexico");
-let svg   = create("svg").attr("viewBox", [0,0,width,height]);
+let svg   = create("svg").attr("viewBox", [0, 0, width, height]);
 
-let projection = geoMercator().fitExtent([[0,0], [width,height]], geo);
+let projection = geoMercator().fitExtent([[0, 0], [width, height]], correctGeojson);
 let path       = geoPath(projection);
 
 svg.selectAll("path")
-    .data(geo.features)
+    .data(correctGeojson.features)
     .enter().append("path")
     .attr("d",path);
 
