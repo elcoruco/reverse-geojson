@@ -74,6 +74,7 @@ root.appendChild(svg.node())
 The function is based on this response on [stackoverflow](https://stackoverflow.com/questions/54947126/geojson-map-with-d3-only-rendering-a-single-path-in-a-feature-collection)
 
 <sup>*</sup> Instituto Nacional de Estadística, Geografía e Informática (México)
+
 <sup>**</sup> Instituto Nacional Electoral (México)
 
 
